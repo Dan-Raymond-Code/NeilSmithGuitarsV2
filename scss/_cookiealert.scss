@@ -1,0 +1,85 @@
+/* COOKIE ALERT STYLES */
+/*
+ * Bootstrap Cookie Alert by Wruczek
+ * https://github.com/Wruczek/Bootstrap-Cookie-Alert
+ * Released under MIT license
+ */
+.cookiealert a:link,
+.cookiealert a:visited {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+.cookiealert a:hover {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.btn-gold {
+  background-color: #c69306 !important;
+  color: black;
+  border: 3px solid #222222;
+  border-radius: 5px;
+}
+
+.btn-gold:hover {
+  opacity: 0.85;
+  background-color: $gold;
+}
+
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  color: $dim-white;
+  background-color: $dark-gray;
+  background-image: $bg-dark-stripes;
+  border-top: 3px solid $dark-gold;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.cookiealert > a,
+.cookiealert > a:link,
+.cookiealert > a:visited,
+.cookiealert > a:active {
+  color: $dim-white;
+}
+
+.cookiealert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.cookiealert a {
+  text-decoration: none;
+}
+
+.cookiealert a:hover {
+  text-decoration: none;
+}
+
+.cookiealert .acceptcookies {
+  margin: 0 auto;
+  vertical-align: baseline;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* MEDIUM BREAKPOINT */
+@media (min-width: 768px) {
+  .cookiealert {
+    font-size: 1.1rem;
+  }
+  .cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+    font-size: 1.1rem;
+  }
+}

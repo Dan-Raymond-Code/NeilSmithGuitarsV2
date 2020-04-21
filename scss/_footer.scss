@@ -1,0 +1,28 @@
+/* FOOTER STYLES */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(14, 14, 14, 0.9);
+  background-image: url(../img/bg/dark-stripes.png);
+  border-top: 3px solid #2d2102;
+}
+
+.footer-item {
+  margin: 0.75rem 0;
+  color: $gold;
+  font-size: 1rem;
+  letter-spacing: $wide-letter-spacing;
+}
+
+.footer .footer-item i {
+  color: $gold !important;
+}
+@media (min-width: 576px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

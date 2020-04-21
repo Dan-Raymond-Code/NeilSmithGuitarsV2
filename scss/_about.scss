@@ -1,0 +1,215 @@
+/* about page styles */
+.about-body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+
+  a {
+    transition: opacity;
+    transition-duration: 1s ease-in-out;
+  }
+}
+
+.about-header {
+  margin: 4rem auto 0;
+  text-align: center;
+
+  &__image {
+    max-width: 170px;
+    display: inline-block;
+    margin-top: 0;
+    transition: all;
+    transition-duration: 100ms;
+  }
+
+  &__image:hover {
+    opacity: 0.7;
+  }
+
+  &__title {
+    margin: 0.25rem auto 0;
+    padding-top: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: $gold;
+    letter-spacing: $wide-letter-spacing;
+  }
+}
+
+.about-testimonials {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+
+  div.slick-slide {
+    color: $dim-white3;
+  }
+}
+
+.about-content {
+  display: flex;
+  margin: 1.5rem auto;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  border-radius: 12px;
+  border: 4px solid #2d2102;
+  padding: 0.5rem 0.3rem 0 0.1rem;
+  font-size: 1rem;
+  background-color: rgba(14, 14, 14, 0.9);
+  background-image: url("../img/bg/dark-stripes.png");
+
+  @include mq-medium-up {
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  &-visual__image {
+    background-color: black;
+    border: 3px solid #2d2102;
+    border-radius: 0.225rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__visual--image {
+    background-color: black;
+    border: 3px solid #2d2102;
+    border-radius: 0.225rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__visual--image:hover {
+    opacity: 0.7;
+    border: $border-bright-gold;
+  }
+
+  &__text {
+    flex: 0 1 auto;
+    text-align: left;
+    background: transparent;
+    color: $dim-white3;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.5rem;
+
+    @include mq-small-up {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__visual {
+    flex: 1 0 auto;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-left: 0.5rem;
+
+    @include mq-small-up {
+      max-width: 75%;
+    }
+  }
+
+  &__visual--image {
+    max-width: 210px;
+    margin: 0.35rem 0;
+    border-radius: 3px;
+  }
+
+  &__text strong {
+    color: var(--bright-white);
+    font-weight: normal;
+  }
+
+  &__text a:link,
+  &__text a:visited,
+  &__text a:active {
+    text-decoration: none;
+    color: var(--dim-white);
+  }
+
+  &__text a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+
+  &__text strong {
+    color: var(--bright-white);
+    font-weight: normal;
+  }
+}
+
+/* Gold Logo Div - Bottom */
+.about-company-logo-gold {
+  width: 100%;
+  height: 110px;
+  background: center center no-repeat
+      url("../img/bg/smith-custom-shop-medium.png"),
+    linear-gradient(to bottom, #fdf6ca, #a8984a);
+  border: none;
+
+  @include mq-large-up {
+    height: 120px;
+    background: 98% center center no-repeat
+        url("../img/bg/smith-custom-shop-medium.png"),
+      linear-gradient(to bottom, #fdf6ca, #a8984a);
+  }
+
+  @include mq-xlarge-up {
+    height: 125px;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-content__visual {
+    margin: 0 auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .about-content__visual {
+    flex: 1 0 200px;
+    width: 100%;
+    margin-right: 1rem;
+    margin-top: -0.2rem;
+  }
+
+  .about-content__visual--image {
+    max-width: 200px;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-content__text {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 0;
+    margin-top: 0.425rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .about-content__visual {
+    flex: 1 0 250px;
+    width: 100%;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: -0.2rem;
+  }
+
+  .about-content__visual--image {
+    max-width: 250px;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-content__text {
+    font-size: 1.2rem;
+  }
+}

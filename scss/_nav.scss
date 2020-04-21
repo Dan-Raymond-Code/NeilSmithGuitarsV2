@@ -1,0 +1,91 @@
+/* MENU STYLES */
+.navbar-toggler {
+  border-color: $gold !important;
+}
+
+.navbar-toggler-icon > i.fas.fa-bars {
+  color: $gold;
+  font-size: 28px;
+}
+
+.nav-link,
+.nav-link:visited {
+  color: $gold !important;
+  font-size: 1.4rem;
+}
+
+.navbar {
+  font-family: $font-sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 1px;
+  z-index: 100;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  color: $gold;
+}
+
+.navbar-dark {
+  background-color: $main-bg-color;
+  background-image: $bg-dark-stripes;
+  border-bottom: 3px solid $dark-gold;
+}
+
+.dropdown-menu {
+  background-color: $main-bg-color;
+  background-image: $bg-dark-stripes;
+  z-index: 101;
+}
+
+.dropdown-item {
+  color: $gold;
+  font-size: 1.4rem;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: $bright-gold;
+}
+
+.dropdown-item.active {
+  background-color: black !important;
+  color: $bright-gold !important;
+}
+
+.bg-gray {
+  background-color: $bg-gray;
+}
+
+.nav-item .nav-link {
+  font-size: 1.4rem !important;
+}
+
+.nav-item > a.nav-link:hover {
+  background-color: black !important;
+  color: $bright-gold !important;
+}
+
+.nav-item > a.nav-link.active {
+  background-color: black !important;
+  color: $bright-gold !important;
+}
+
+/* TABLET BREAKPOINT */
+@media (min-width: 576px) {
+  .nav-link {
+    font-size: 1.3rem;
+  }
+  .dropdown-item {
+    font-size: 1.3rem;
+  }
+}
+
+/* LARGE BREAKPOINT */
+@media (min-width: 992px) {
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

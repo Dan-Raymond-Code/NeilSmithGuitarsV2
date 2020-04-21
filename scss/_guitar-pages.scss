@@ -1,0 +1,303 @@
+/* Guitar Page Styles */
+/* Mobile devices (phones up to 575px) */
+/* @media (max-width: 575px) { */
+.pictured,
+.checkmark {
+  color: green;
+}
+
+.guitar-page-body {
+  font-family: $font-sans-serif;
+  background-color: $bg-black;
+}
+
+.guitar-details-specs__notes {
+  color: $dim-white3;
+}
+
+.guitar-page-container {
+  margin-top: 4rem;
+}
+
+.guitar-page-header {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.guitar-page-header__logo {
+  margin-top: 0.25rem;
+  max-width: 170px;
+  display: inline-block;
+  transition: all 0.45s;
+}
+
+.guitar-page-header__logo:hover {
+  opacity: 0.7;
+}
+
+.guitar-details-container {
+  background: inherit;
+}
+
+.guitar-details {
+  background: inherit;
+
+  strong,
+  b {
+    color: $dim-white;
+    font-weight: normal;
+  }
+
+  sup {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-left: 0.2rem;
+  }
+
+  .as-pictured {
+    font-size: 120%;
+  }
+}
+
+.guitar-details__title {
+  color: $gold;
+  font-size: 2.1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+.guitar-details-text,
+.guitar-details-text__description {
+  color: $dim-white3;
+}
+
+.guitar-details-text {
+  clear: both;
+}
+
+.guitar-details-column {
+  border: 4px solid $dark-gold;
+  border-radius: 7px;
+  padding: 0;
+  background-color: $main-bg-color;
+  background-image: $bg-dark-stripes;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.guitar-details-specs {
+  padding-bottom: 1rem;
+}
+
+.guitar-details-specs__heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: $gold;
+  background: $bg-gray;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  padding: 0.2rem 0.2rem;
+  border-top: 3px solid $dark-gold;
+  border-bottom: 3px solid $dark-gold;
+}
+
+.guitar-details-specs__label {
+  font-weight: normal;
+  color: $dim-white;
+  letter-spacing: 0.0225rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.guitar-details-specs__list {
+  list-style: none;
+  padding: 0 1rem;
+  margin-left: 0;
+  margin-bottom: 0.15rem;
+}
+
+.MagicZoom img {
+  border: none;
+  /* 3px solid $dark-gold) !important; */
+}
+
+.guitar-details-column > p {
+  padding: 0 0.5rem;
+}
+
+.guitar-details-visual {
+  padding: 0;
+  flex: 0 0 100%;
+  margin: 0 auto;
+}
+
+.guitar-details-visual-photos {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.guitar-details-visual-photos__main-photo {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.guitar-details-visual-photos__thumbnails {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.guitar-details-visual-photos__thumbnails--thumbnail-link {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.guitar-details-visual-photos__thumbnails--thumbnail {
+  border: 2px solid $dark-gold;
+}
+
+.guitar-details-text {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  font-size: 1.2rem;
+  clear: both;
+}
+
+.guitar-details-text__description {
+  padding: 0 1rem;
+  color: $dim-white3;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  display: block;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .MagicZoom img {
+    border: 3px solid $dark-gold !important;
+  }
+
+  .guitar-page-header__logo {
+    margin-top: 0;
+    max-width: 170px;
+    display: inline-block;
+  }
+
+  .guitar-details-column {
+    padding: 0;
+    margin: 1rem auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .guitar-details-visual-photos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .guitar-details-visual-photos__main-photo {
+    flex: 0 0 auto;
+    order: 2;
+  }
+
+  .guitar-details-visual-photos__thumbnails {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .guitar-details-text {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .guitar-details-text__description {
+    font-size: inherit;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .guitar-details-column {
+    padding: 0;
+    margin: 1rem auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .guitar-details-visual-photos {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 385px;
+  }
+
+  .guitar-details-visual-photos__main-photo {
+    flex: 0 0 auto;
+    order: 2;
+  }
+
+  .guitar-details-specs__heading {
+    padding: 0.25rem 2rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .guitar-details-column {
+    padding: 0;
+    margin: 1rem auto;
+    text-align: center;
+    width: 70%;
+  }
+
+  .guitar-details {
+    display: block;
+  }
+
+  .guitar-details-text__description {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .guitar-details-specs__heading {
+    padding: 0 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .guitar-details-column {
+    padding: 0;
+    margin: 1rem auto;
+    text-align: center;
+    width: 30%;
+  }
+
+  .guitar-details {
+    display: block;
+  }
+
+  .guitar-details-specs__heading {
+    padding: 0.25rem 6rem;
+    display: block;
+  }
+}
