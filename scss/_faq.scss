@@ -1,4 +1,4 @@
-@import "vars";
+@import 'vars';
 
 /* FAQ page styles */
 .faq-body {
@@ -169,11 +169,12 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .faq-container {
-    background-image: url("../img/bg/guitar-making-station2-lg.jpg");
+    background-image: url('../img/bg/guitar-making-station2-lg.jpg');
     background-color: black;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   .faq-wrapper {
