@@ -1,0 +1,202 @@
+/* HOME PAGE STYLES */
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.home-page-body {
+  font-family: $font-sans-serif;
+  background-color: $bg-black;
+
+  img {
+    border: none;
+  }
+}
+
+.home-page-container {
+  margin-top: 5rem;
+  background-color: $bg-black;
+}
+
+.home-page-header {
+  text-align: center;
+  margin-bottom: 0;
+
+  &__title {
+    color: $gold;
+    font-size: 2.1rem;
+    letter-spacing: $wide-letter-spacing;
+    line-height: 0.8;
+    padding-bottom: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  &__image {
+    display: inline-block;
+    max-width: 190px;
+    margin: 0.5rem 0 1rem;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.secret-weapon-wrapper {
+  text-align: center;
+
+  @include mq-medium-up {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+.secret-weapon {
+  color: $gold;
+  font-size: 1.8rem;
+  line-height: 1.4;
+
+  @include mq-medium-up {
+    font-size: 1.9rem;
+    line-height: 1.465;
+  }
+
+  @include mq-large-up {
+    font-size: 2rem;
+  }
+}
+
+.home-page-guitar {
+  &__thumb-link,
+  &__thumb-link:active,
+  &__thumb-link:link,
+  &__thumb-link:visited {
+    color: $text-light;
+    @extend %transition;
+  }
+  &__thumb-link:hover {
+    opacity: 0.7;
+  }
+
+  &__thumb-link:hover .bordered-label {
+    color: $bright-gold;
+    border-color: $bright-gold;
+  }
+
+  &__thumb-link:hover .home-page-guitar__bordered-label {
+    color: $bright-gold;
+    border-color: $bright-gold;
+  }
+
+  &__vertical-image {
+    background: inherit;
+
+    @include mq-small-up {
+      width: 130px;
+    }
+
+    @include mq-medium-up {
+      width: 150px;
+    }
+
+    @include mq-large-up {
+      width: 130px;
+    }
+  }
+
+  &__bordered-label {
+    display: inline-block;
+    width: auto;
+    color: $gold;
+    font: 1.7rem $font-sans-serif;
+    margin: 0.5rem auto 2rem;
+    padding: 0.2rem 0.375rem;
+    border: 2px solid $dark-gold;
+    border-radius: 6px;
+    background-color: $main-bg-color;
+    background-image: $bg-dark-stripes;
+    text-decoration: none;
+    @extend %transition;
+
+    &:hover {
+      color: $bright-gold;
+      background: $dim-black;
+      text-decoration: none;
+      border: 2px solid $gold;
+    }
+  }
+}
+
+// .home-page-guitar__bordered-label,
+// .home-page-guitar__thumb-link,
+// .home-page-header__logo {
+//   @extend %transition;
+//   // transition: all 0.2s ease-in-out;
+// }
+
+/* VERTICAL GUITAR ICON LINKS */
+
+.home-page-guitars {
+  margin: 0.5rem 0;
+  text-align: center;
+  justify-content: center;
+}
+
+/* HOME PAGE TEXT */
+.home-page-text {
+  color: $gold;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 0.75rem;
+  background: $main-bg-color $bg-dark-stripes;
+  border: 3px solid $dark-gold;
+  border-radius: 7px;
+  transition: all 0.35s ease-in-out;
+
+  &:hover {
+    border: 3px solid $gold;
+    color: $bright-gold;
+  }
+
+  @include mq-medium-up {
+    width: 80%;
+  }
+
+  @include mq-large-up {
+    width: 77%;
+  }
+
+  @include mq-xlarge-up {
+    font-size: 1.4rem;
+    width: 65%;
+  }
+}
+
+/* READY TO PURCHASE */
+.ready-to-purchase {
+  color: $dim-white;
+  font-size: 1.25rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  text-align: center;
+
+  a {
+    &:link,
+    &:visited {
+      color: $bright-white;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include mq-large-up {
+    font-size: 1.35rem;
+  }
+
+  @include mq-large-up {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,30 @@
+/* LAS VEGAS BACKGROUND */
+.bg-las-vegas-dusk {
+  height: 250px;
+  width: 100%;
+  background: url("../img/bg/las-vegas-dusk4-bg.jpg") center center / cover
+    no-repeat;
+  border-top: 4px solid $gold;
+
+  &--caption {
+    color: $dim-white2;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5.3rem;
+    letter-spacing: $wide-letter-spacing;
+
+    @include mq-medium-up {
+      font-size: 1.3rem;
+      padding-top: 5rem;
+    }
+  }
+}
+
+/* MEDIUM BREAKPOINT */
+// @media (min-width: 768px) {
+//   .bg-las-vegas-dusk--caption {
+//     font-size: 1.3rem;
+//     padding-top: 5rem;
+//   }
+// }

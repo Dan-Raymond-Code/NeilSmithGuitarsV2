@@ -1,0 +1,199 @@
+.gallery-body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+.gallery-container {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.gallery-header {
+  &__instructions {
+    font-size: 1.25rem;
+    font-style: italic;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $gold;
+  }
+}
+
+.gallery-header__title {
+  font-size: 2rem;
+  text-align: center;
+  color: $gold;
+  display: block;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(126px, 1fr));
+  grid-gap: 5px;
+  margin: 0.75rem 0.5rem;
+}
+
+.gallery {
+  figure figcaption {
+    display: none;
+  }
+
+  @include mq-medium-up {
+    figure {
+      position: relative;
+    }
+
+    figure figcaption {
+      display: block;
+
+      position: absolute;
+      font-size: 0.85rem;
+      color: lighten($gold, 10%);
+      top: 35%;
+      bottom: 25%;
+      left: 5%;
+      right: 5%;
+      padding: 0.5rem 0.25rem 0.2rem;
+      text-align: center;
+      background-color: $main-bg-color;
+      background-image: $bg-dark-stripes;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.85s ease-in-out;
+    }
+
+    figure:hover figcaption {
+      opacity: 1;
+    }
+
+    figure img:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.gallery__image {
+  margin: 0.25rem;
+}
+
+.gallery__image img {
+  border: 3px solid $gold;
+}
+
+.gallery__image img:hover {
+  border: 3px solid $bright-gold;
+}
+
+.gallery-wrapper {
+  text-align: center;
+  margin: 5rem auto 1.5rem auto;
+  border-radius: 12px;
+  border: 5px solid #2d2102;
+  padding: 0 0.3rem 0 0.1rem;
+  background-color: $main-bg-color;
+  background-image: $bg-dark-stripes;
+  width: 100%;
+  /* TODO - jigger with this and media queries width: 60%; */
+}
+
+.gallery-wrapper a {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-wrapper a:link,
+.gallery-wrapper a:visited,
+.gallery-wrapper a:active {
+  text-decoration: none;
+  color: $dim-white3;
+}
+
+.gallery-wrapper a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.gallery-header__logo {
+  max-width: 170px;
+  display: inline-block;
+  margin: 0.25rem auto 0.25rem;
+  transition: all 100ms ease-in-out;
+}
+
+.gallery-header__logo:hover {
+  opacity: 0.7;
+}
+
+.gallery-wrapper--logo-wrapper .contact-logo {
+  max-width: 170px;
+  display: inline-block;
+  margin: 0.25rem auto 0.25rem;
+  transition: all 100ms ease-in-out;
+}
+
+.gallery-wrapper--logo-wrapper .contact-logo:hover {
+  opacity: 0.7;
+}
+
+.gallery-wrapper--address-wrapper {
+  font-size: 1.3rem;
+  color: $dim-white3;
+}
+
+.gallery-wrapper--address-wrapper .company-name {
+  font-size: 2.2rem;
+  color: $gold;
+  letter-spacing: $wide-letter-spacing;
+}
+
+.gallery-wrapper--credit-wrapper {
+  font-size: 1rem;
+  color: $dim-white3;
+  margin: 0.65rem auto 0.75rem;
+}
+
+/* FOOTER STYLES */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(14, 14, 14, 0.9);
+  background-image: url(../img/bg/dark-stripes.png);
+  border-top: 3px solid #2d2102;
+}
+
+@media (min-width: 576px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+    grid-gap: 5px;
+    margin: 0.75rem 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-wrapper {
+    width: 90%;
+  }
+}
+
+@media (min-width: 972px) {
+  .gallery-wrapper {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery-wrapper {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .gallery-wrapper {
+    width: 65%;
+  }
+}
